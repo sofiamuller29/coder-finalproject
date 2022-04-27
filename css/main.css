@@ -25,12 +25,12 @@ body {
     top: 10px;
     left: 10px;
     margin: 10px; 
-    transform: translate(-850px) scale(1.5,1.5);
+    transform: scale(1.5,1.5) translate(20px);
     transition: all .3 ease-in;
 }
 
 .logo:hover {
-    transform: translateX(40px);
+    transform:scale(2);
 }
 
 .top-scroll {
@@ -83,8 +83,8 @@ ul:hover {
 }
 
 main {
-    display: flex;
-    align-content: space-around;
+    /* display: flex;
+    align-content: space-around; */
     transition-property: all;
     transition-duration: 0.3 ;
     transition-timing-function: ease-in-out;
@@ -98,9 +98,10 @@ main:hover {
 
 .main1 {
     background-color: #c1d1ee;
-    display: flex;
+    /* display: flex; */
     /* flex-direction:column;
     flex-wrap: nowrap; */
+    flex-wrap: wrap;
     height: 500px;
     width: 500px;
     margin: 15px;
@@ -186,12 +187,13 @@ aside:hover {
 .contenedor {
 
     display: grid;
+    grid-template-columns: auto;
     grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "aside aside aside"
-    "footer footer footer";
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
 
 }
 
@@ -263,7 +265,7 @@ footer:hover {
 
 /* Pagina Contact Us/About Us */
 .calendar {
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #c1d1ee;
     margin: 10px;
     
@@ -275,7 +277,7 @@ footer:hover {
 
 
 table {
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #c1d1ee;
     margin: 10px;
     width: auto;
@@ -295,7 +297,7 @@ table {
 
 
 .blog {
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #c1d1ee;
     margin: 10px;
     width: auto;
@@ -310,15 +312,7 @@ table {
 }
 
 
-/* .gridcontactus { 
-    display: grid;
-    grid-template-areas: 
-    "contact-form calendar";
-    grid-column: auto;
-    grid-template-rows: max-content;
-    grid
-}*/
- 
+
 
 
 
@@ -372,8 +366,22 @@ table {
         border: solid;
     }
 
+    main{
+        display: flex;
+        align-content: space-around; */
+    }
 
 
+    /* Grid contact us */
+    .gridcontactus { 
+        display: grid;
+        grid-template-areas: 
+        "contact-form calendar";
+        grid-column: auto;
+        grid-template-rows: max-content;
+        grid
+    }
+     
  }
 
 
