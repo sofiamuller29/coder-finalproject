@@ -25,6 +25,12 @@ body {
     top: 10px;
     left: 10px;
     margin: 10px; 
+    transform: translate(-850px) scale(1.5,1.5);
+    transition: all .3 ease-in;
+}
+
+.logo:hover {
+    transform: translateX(40px);
 }
 
 .top-scroll {
@@ -54,6 +60,17 @@ ul {
     border: solid;
 }
 
+/* Transicion navegador */
+ul {
+    transition-property: all;
+    transition-duration: 0.3 ;
+    transition-timing-function: ease-in-out;
+}   
+
+ul:hover {
+    background-color:antiquewhite ;
+}
+
 .backgroundimage{
     background-image: url(../images/istockphoto-1161334995-612x612.jpeg);
     background-size:cover;
@@ -68,7 +85,16 @@ ul {
 main {
     display: flex;
     align-content: space-around;
+    transition-property: all;
+    transition-duration: 0.3 ;
+    transition-timing-function: ease-in-out;
 }
+
+/* Transicion Main */
+main:hover {
+    background-color:antiquewhite ;
+}
+
 
 .main1 {
     background-color: #c1d1ee;
@@ -103,6 +129,14 @@ aside {
     display: flex;
     align-self: center;
     flex: content;
+    transition-property: all;
+    transition-duration: 0.3 ;
+    transition-timing-function: ease-in-out;
+}
+
+/* Transicion aside */
+aside:hover {
+    background-color:antiquewhite ;
 }
 
 .aside1 {
@@ -213,8 +247,15 @@ footer {
     padding: 8px;
     align-items: center;
     border: solid black 3px;
+    transition-property: all;
+    transition-duration: 0.3 ;
+    transition-timing-function: ease-in-out;
 }
 
+/* Transicion footer */
+footer:hover {
+    background-color:antiquewhite ;
+}
 
 
 
