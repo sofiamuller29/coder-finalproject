@@ -100,8 +100,8 @@ main:hover {
     /* flex-direction:column;
     flex-wrap: nowrap; */
     flex-wrap: wrap;
-    height: 500px;
-    width: 500px;
+    height: auto;
+    width: auto;
     margin: 15px;
     border: black 5px;
     padding: 10px;
@@ -114,8 +114,8 @@ main:hover {
     background-color: #c1d1ee;
     /* display: flex;
     flex-direction: :row; */
-    height: 500px;
-    width: 500px;
+    height: auto;
+    width: auto;
     margin: 15px;
     border: black 5px;
     padding: 10px;
@@ -182,50 +182,6 @@ aside:hover {
     align-items: stretch;
 }
 
-.contenedor {
-
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "aside"
-    "footer";
-
-}
-
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
-}
-
-
-main {
-    grid-area: main;
-
-}
-
-.main2 { 
-
-    grid-area: main2;
-} 
-
-aside{
-    grid-area: aside;
-}
-
-.aside2 {
-    grid-area: aside2;
-}
-
-footer {
-    grid-area: footer;
-}
-
 
 .contact-form {    
     background-color: #c1d1ee;
@@ -250,6 +206,7 @@ footer {
     transition-property: all;
     transition-duration: 0.3 ;
     transition-timing-function: ease-in-out;
+    background-color: #dce5f6;
 }
 
 /* Transicion footer */
@@ -266,10 +223,11 @@ footer:hover {
     /* justify-content: center; */
     background-color: #c1d1ee;
     margin: 10px;
-    
     grid-area: calendar;
     border: solid 3px;
     margin: 15;
+    height: fit-content;
+    width: fit-content;
     
 }
 
@@ -281,6 +239,8 @@ table {
     width: auto;
     grid-area: calendar;
     border: solid 3px;
+    height: fit-content;
+    width: fit-content;
     
 }
 
@@ -306,12 +266,58 @@ table {
 
 
 .blogimg {
-    height: 200px;
+    height: auto;
+    width: 400px;
+    align-content: center;
+    align-items: center;
 }
 
 
 
+.container-integrations{
+    padding: 50px;
+    align-content: space-around;
+}
 
+
+.gridcontactus {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+    "table table"
+    "calendar calendar"
+    "contact-form"
+    "blog";
+}
+
+.table {
+    grid-area: table;
+}
+
+.calendar {
+    grid-area: calendar;
+}
+
+.contact-form {
+    grid-area: contact-form;
+}
+
+.blog {
+    grid-area: blog;
+}
+
+
+ /* Integrations */
+
+ .container-integrations {
+    border: solid;
+    width: auto;
+    height: auto;
+    align-items:center ;
+    align-content: space-around;
+
+}
 
 
 /* Tablet 768px */
@@ -319,15 +325,7 @@ table {
 
 
 @media screen and (min-width: 768px) {
-    .grid {
-        grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "aside aside aside"
-        "footer footer footer";
-    }
-
+    
     .header {
         background-color: antiquewhite;
     }
@@ -373,7 +371,7 @@ table {
     .gridcontactus { 
         display: grid;
         grid-template-areas: 
-        "contact-form calendar";
+        "contact-form";
         grid-column: auto;
         grid-template-rows: max-content;
         grid
@@ -400,3 +398,6 @@ table {
         align-content: center;
     }
  }
+
+
+
