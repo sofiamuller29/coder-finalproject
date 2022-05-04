@@ -22,10 +22,8 @@ body {
     height: 40px;
     display: inline;
     overflow: auto;
-    top: 10px;
-    left: 10px;
-    margin: 10px; 
-    transform: scale(1.5,1.5) translate(20px);
+    margin: 10px;
+    transform: scale(1.5,1.5) translate(1px);
     transition: all .3 ease-in;
 }
 
@@ -325,9 +323,8 @@ table {
         grid-template-areas: 
         "header header header"
         "nav nav nav"
-        "main1 main2 main2"
-        "aside1 aside2 aside2"
-        "aside3 aside3 aside3"
+        "main main main"
+        "aside aside aside"
         "footer footer footer";
     }
 
@@ -368,7 +365,7 @@ table {
 
     main{
         display: flex;
-        align-content: space-around; */
+        align-content: space-around;
     }
 
 
@@ -383,9 +380,6 @@ table {
     }
      
  }
-
-
-
 /* Computadora 1024px */
  
  
