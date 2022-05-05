@@ -1,0 +1,30 @@
+.col {
+    color: rgb(71, 98, 147);
+    border: solid;
+    padding: 10px;
+
+    h2 {
+        color: $color-primary;
+    }
+
+    .imgwhyaero {
+        height: 50% auto;
+        width: 50% auto;
+        padding-top: $padding-1;
+        padding-bottom: $padding-1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 1s ease-in-out;
+    }
+
+}
+
+.imgwhyaero:hover {
+    transform:scale(2);
+}
+
+footer {
+    border: solid 2px cornflowerblue;
+    font-weight: 200;
+}

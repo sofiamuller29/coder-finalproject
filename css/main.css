@@ -374,10 +374,9 @@ table {
         "contact-form";
         grid-column: auto;
         grid-template-rows: max-content;
-        grid
     }
      
- }
+}
 /* Computadora 1024px */
  
  
@@ -398,6 +397,4 @@ table {
         align-content: center;
     }
  }
-
-
 
