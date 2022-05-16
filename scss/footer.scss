@@ -1,0 +1,20 @@
+$redes: (
+    linkedin: #2061736d,
+    twitter: #0026a2,
+    instagram: #c000f6,
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color: $color;
+        border: solid; 
+        padding: 12px;
+        font-size: medium;
+        align-content: space-around;
+    }
+}
+
+footer {
+    border: solid 2px cornflowerblue;
+    font-weight: 200;
+}

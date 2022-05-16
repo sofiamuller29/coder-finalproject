@@ -2,6 +2,13 @@ nav div {
   border: solid 2px beige;
   color: azure; }
 
+.row {
+  color: #476293;
+  border: solid;
+  padding: 10px; }
+  .row h2 {
+    color: #89d0d0; }
+
 .col {
   color: #476293;
   border: solid;
@@ -20,6 +27,27 @@ nav div {
 
 .imgwhyaero:hover {
   transform: scale(2); }
+
+.red-linkedin {
+  color: #2061736d;
+  border: solid;
+  padding: 12px;
+  font-size: medium;
+  align-content: space-around; }
+
+.red-twitter {
+  color: #0026a2;
+  border: solid;
+  padding: 12px;
+  font-size: medium;
+  align-content: space-around; }
+
+.red-instagram {
+  color: #c000f6;
+  border: solid;
+  padding: 12px;
+  font-size: medium;
+  align-content: space-around; }
 
 footer {
   border: solid 2px cornflowerblue;

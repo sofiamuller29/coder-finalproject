@@ -1,3 +1,14 @@
+.row {
+    color: rgb(71, 98, 147);
+    border: solid;
+    padding: 10px;
+
+    h2 {
+        color: $color-primary;
+    }
+
+}
+
 .col {
     color: rgb(71, 98, 147);
     border: solid;
@@ -24,7 +35,3 @@
     transform:scale(2);
 }
 
-footer {
-    border: solid 2px cornflowerblue;
-    font-weight: 200;
-}
