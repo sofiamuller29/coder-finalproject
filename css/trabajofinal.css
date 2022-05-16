@@ -52,3 +52,22 @@ nav div {
 footer {
   border: solid 2px cornflowerblue;
   font-weight: 200; }
+
+.button, .button-primary {
+  border: solid;
+  padding: 8px 16px;
+  margin: 8px; }
+
+.button-primary {
+  background-color: azure;
+  border-color: antiquewhite; }
+
+.calendartitle {
+  height: 20px;
+  width: fit-content;
+  margin: 20px;
+  border: solid 30px;
+  border-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }

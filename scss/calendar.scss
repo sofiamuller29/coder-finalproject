@@ -1,0 +1,19 @@
+
+// Mixins
+@mixin size ($alto, $ancho, $margin, ){
+    height: $alto;
+    width: $ancho;
+    margin: $margin;
+    
+    
+}
+
+.calendartitle {
+    @include size(20px, fit-content, 20px);
+    border: solid 30px;
+    border-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}

@@ -231,6 +231,15 @@ footer:hover {
     
 }
 
+.calendartitle  h3 {
+    font-size: large;
+    background-color: #c1d1ee !important;
+    border: #c1d1ee solid;
+   
+}
+
+
+
 
 table {
     /* justify-content: center; */

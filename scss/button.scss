@@ -1,0 +1,14 @@
+// Extend 
+
+.button {
+    border: solid;
+    padding: 8px 16px;
+    margin: 8px;
+}
+
+.button-primary {
+    @extend .button;
+    background-color: azure;
+    border-color: antiquewhite;
+
+}
