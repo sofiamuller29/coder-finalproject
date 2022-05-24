@@ -328,6 +328,20 @@ table {
 
 }
 
+/* Contact Us */
+.col-1 {
+    background-color: beige;
+    width: auto;
+    
+}
+
+.blogimg {
+    width: 300px;
+    padding: 10px;
+
+}
+
+
 
 /* Tablet 768px */
 
@@ -352,6 +366,7 @@ table {
 
     .blogimg {
         height: 400px;
+        width: 500px;
         align-content: center;
 
     }
@@ -392,6 +407,7 @@ table {
 @media screen and (min-width: 1024px) {
     .imageaside2 {
         height: 800px;
+        
        
 
     }
@@ -401,9 +417,8 @@ table {
 
     }
 
-    .blogimg {
-        height: auto;
-        align-content: center;
-    }
+
  }
+
+
 
